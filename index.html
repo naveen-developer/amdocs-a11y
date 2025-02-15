@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amdocs digital network transformation communications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav aria-label="Secondary Navigation" class="top-nav">
+        <div class="top-nav-links">
+            <ul>
+                <li><a href="#" aria-current="page">Our Partners</a></li>
+                <li><a href="#">News & Press</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Navigation Bar -->
+    <nav aria-label="Primary Navigation" class="main-nav">
+        <a href="#" class="logo-link">
+            <img src="./images/amdocs-logo-2x_0.png" alt="Amdocs Logo" class="logo">
+        </a>
+        <div class="main-nav-links" role="navigation">
+            <ul>
+                <li><a href="#">Why Amdocs</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Products & Services</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <!-- Replace the existing search div with this new form -->
+            <form id="search-form" autocomplete="off" class="search-form">
+                <div class="form-item">
+                    <label for="edit-search" class="visuallyhidden">Search</label>
+                    <input type="text" id="edit-search" name="search" class="form-autocomplete" placeholder="Search"
+                        size="30" maxlength="128" autocomplete="off" data-autocomplete-path="/search/autocomplete">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="edit-submit-search" class="form-submit">
+                        <span class="visuallyhidden">Search</span>
+                        <svg class="search-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                            <path
+                                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <section class="hero" aria-label="Hero banner">
+            <div class="video-container">
+                <video autoplay muted loop playsinline aria-hidden="true">
+                    <source src="./videos/amdocs-ces-2025.mp4" type="video/mp4">
+                    <!-- Fallback image for browsers that don't support video -->
+                    <img src="./images/banner-home-ces25.jpg" alt="Technology background">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1>
+                    <span class="main-title">FIND YOUR</span>
+                    <span class="highlight">SUITE SPOT</span>
+                </h1>
+                <h2 class="subtitle">CES25 SELECT</h2>
+                <p>Introducing surprisingly agile AI-driven BSS/OSS offerings featuring agent-driven automation, modular
+                    design, open architecture and configurable experiences and workflows.</p>
+                <a href="#" class="cta-button" role="button">Learn more</a>
+            </div>
+        </section>
+        <section class="what-we-do" aria-label="What we do">
+            <div class="header-container">
+                <h2 id="services-heading">What we do</h2>
+            </div>
+            <ul class="services-grid" aria-labelledby="services-heading">
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-woman-drone-sm.jpg" alt="">
+                        </div>
+                        <h3>5G: Make today's impossible tomorrow's possible</h3>
+                        <p>Unlock the full potential of 5G and shape the network to create new capabilities, unique
+                            business models and game-changing opportunities.</p>
+                        <a href="#" aria-label="Learn more about 5G Solutions">Explore 5G Solutions</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-man-skateboarding-sm.jpg" alt="">
+                        </div>
+                        <h3> AUTOMATION: Simplify the complex, deliver the brilliant </h3>
+                        <p>Discover the streamlined, cost-efficient and intelligent answer to increasingly complex
+                            customer, IT and network demands.</p>
+                        <a href="#" aria-label="Learn more about Cloud Solutions">Explore Automation</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/chess-pcs-grad-sm.jpg" alt="">
+                        </div>
+                        <h3> B2B Portfolio </h3>
+                        <p>Deliver an amazing end-to-end customer experience – from sales through to delivery and
+                            monetization.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore B2B</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-man-clouds-sm.jpg" alt="">
+                        </div>
+                        <h3> CLOUD: Your future looks breathtaking from here </h3>
+                        <p>Embrace the cloud and together we'll see your business agility, innovation and scalability
+                            soar to new heights.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore Cloud</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-woman-headphones-sm.jpg" alt="">
+                        </div>
+                        <h3> DIGITAL: Reinvent the customer experience every day </h3>
+                        <p>Discover the agility to deliver a jaw-dropping digital experience that always exceeds
+                            expectations.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore Digital</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-woman-phone-night-fs-mobile.jpg" alt="">
+                        </div>
+                        <h3> Financial Services: Take a position in the future of finance </h3>
+                        <p>Harness new technologies to unlock the true value of your firm. Together we can reshape the
+                            future of finance – with long term, sustainable results.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore Financial Services</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/gen-ai-smiling-cyber-woman-mobile.jpg" alt="">
+                        </div>
+                        <h3> GenAI: Redefine execution boundaries to maximize productivity </h3>
+                        <p>Discover how Generative AI is revolutionizing telecommunications with creativity and
+                            supercharged intelligence.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore GenAI</a>
+                    </article>
+                </li>
+                <li class="service-card">
+                    <article class="service-content">
+                        <div class="image-container">
+                            <img src="./images/restricted-man-bubbles-sm.jpg" alt="">
+                        </div>
+                        <h3> MEDIA: Fill your customers' day with content they love </h3>
+                        <p>Build an irresistible content proposition and experience that keeps your customers coming
+                            back for more.</p>
+                        <a href="#" aria-label="Learn more about AI Solutions">Explore Media</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="recent-news" aria-label="Recent News">
+            <div class="header-container">
+                <h2 id="news-heading">Recent news</h2>
+            </div>
+            <ul class="news-grid" aria-labelledby="news-heading">
+                <li class="news-card">
+                    <article class="news-content">
+                        <a href="#">
+                            Amdocs Recognized in Industry Analyst Reports
+                        </a>
+                        <time datetime="2025-02-04">14 Feb 2025</time>
+                    </article>
+                </li>
+                <li class="news-card">
+                    <article class="news-content">
+                        <a href="#">
+                            MWC 2025: Amdocs Charging Momentum Accelerates with Substantial Implementations, Empowering
+                            Service Providers of All Sizes
+                        </a>
+                        <time datetime="2025-02-06">06 Feb 2025</time>
+                    </article>
+                </li>
+
+                <li class="news-card">
+                    <article class="news-content">
+                        <a href="#">
+                            Singapore's M1 Goes Live with Postpaid Charging in Cloud-Based Modernization with Amdocs
+                        </a>
+                        <time datetime="2025-02-04">04 Feb 2025</time>
+                    </article>
+                </li>
+
+
+            </ul>
+        </section>
+        <section class="customer-spotlight" aria-label="Customer Success Stories">
+            <div class="header-container">
+                <h2 id="customers-heading">Who we work with</h2>
+                <a href="#" aria-label="View more customer stories">More customers ></a>
+            </div>
+
+            <div class="featured-customer">
+                <div class="customer-content">
+                    <h3>Bell</h3>
+                    <p>Through joint venture with Amdocs: Bell Canada set to lead the way with best-in-class billing
+                        solutions</p>
+                    <a href="#" aria-label="Read more about Bell Canada case study">read more ></a>
+                </div>
+                <div class="customer-image">
+                    <img src="./images/bell.png" alt="Bell logo" id="featured-image">
+                </div>
+            </div>
+
+            <div class="customer-slider" aria-label="Customer showcase slider">
+                <button class="slider-arrow prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+
+                <div class="slider-container">
+                    <div class="slider-item" data-image="./images/vodafone-logo-new-550.jpg">
+                        <img src="./images/vodafone-logo-new-550.jpg" alt="Vodafone logo">
+                    </div>
+                    <div class="slider-item" data-image="./images/attt-caps-logo-550.jpg">
+                        <img src="./images/attt-caps-logo-550.jpg" alt="AT&T logo">
+                    </div>
+                    <div class="slider-item active" data-image="./images/bell.png">
+                        <img src="./images/bell.png" alt="Bell logo">
+                    </div>
+                    <div class="slider-item" data-image="./images/bt-550.jpg">
+                        <img src="./images/bt-550.jpg" alt="BT logo">
+                    </div>
+                    <div class="slider-item" data-image="./images/comcast-550.jpg">
+                        <img src="./images/comcast-550.jpg" alt="Comcast logo">
+                    </div>
+                    <div class="slider-item" data-image="./images/tmobile-new-logo-550.jpg">
+                        <img src="./images/tmobile-new-logo-550.jpg" alt="t-mobile logo">
+                    </div>
+                </div>
+
+                <button class="slider-arrow next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        <section class="latest-insights" aria-label="Latest insights">
+            <div class="insights-header">
+                <h2 id="insights-heading">Latest Insights</h2>
+                <a href="#" aria-label="View all insights">See all insights ></a>
+            </div>
+
+            <div class="insights-nav" aria-label="Insights navigation">
+                <button class="nav-button prev" aria-label="Previous insights">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="nav-button next" aria-label="Next insights">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="insights-container">
+                <div class="insights-slider">
+                    <!-- Card 1 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/open-ran-video.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-film" style="color: #ffffff;" aria-hidden="true"></i></span>
+                                <span class="tag-label">Video</span>
+                                <a href="#" class="tag">Amdocs Networks</a>
+                                <a href="#" class="tag">Network Deployment & Optimization</a>
+                            </div>
+                            <a href="#" class="card-title">Boost Mobile Launches First North American 5G Open RAN on
+                                Public Cloud</a>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/poppy-headshot.jfif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title"> The Timeless Power of Storytelling </a>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/blonde-girl-happy-city.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Infographic</span>
+                                <a href="#" class="tag">GenAI</a>
+                                <a href="#" class="tag">MWC 2025</a>
+                            </div>
+                            <a href="#" class="card-title"> Highlights of Rethinking Brand and Customer Experience in
+                                the Agentic Era </a>
+                            <time class="card-date" datetime="2025-02-06">04 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/man-using-his-computer.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Blog</span>
+                                <a href="#" class="tag">amAIz Suite</a>
+                                <a href="#" class="tag">Cloud</a>
+                            </div>
+                            <a href="#" class="card-title"> GenAI Needs Dedicated Governance. Here's Why...and How </a>
+                            <p class="card-sub-title">Practice Lead – Cloud Data Platforms </p>
+                            <time class="card-date" datetime="2025-02-06">04 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/three-business-people-looking-at-document.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Blog</span>
+                                <a href="#" class="tag">Financial Services</a>
+                                <a href="#" class="tag">Amdocs Quality Engineering Services</a>
+                            </div>
+                            <a href="#" class="card-title"> Top three QA missteps slowing time to market for banks </a>
+                            <p class="card-sub-title">Vice President of Quality Engineering, Amdocs</p>
+                            <time class="card-date" datetime="2025-02-06">04 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/girl-city-lights-glasses-ai.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Articles</span>
+                                <a href="#" class="tag">amAIz Suite</a>
+                                <a href="#" class="tag">Financial Services</a>
+                            </div>
+                            <a href="#" class="card-title"> Banks' testing set for transformation, says Dror Avrilingi
+                            </a>
+                            <p class="card-sub-title">Head of QE, Data & AI Studios</p>
+                            <time class="card-date" datetime="2025-02-06">03 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/young-girl-face-ai.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Articles</span>
+                                <a href="#" class="tag">AI</a>
+                            </div>
+                            <a href="#" class="card-title">AI-Driven Network Automation Transforms Telecom
+                                Operations</a>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/cloud-driving-car_1.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Whitepaper</span>
+                                <a href="#" class="tag">amAIz Suite</a>
+                                <a href="#" class="tag">Cloud</a>
+                            </div>
+                            <a href="#" class="card-title"> Whitepaper: Five Pillars of Ethical AI </a>
+                            <p class="card-sub-title">Practice lead - Cloud data platforms, Amdocs Cloud</p>
+                            <time class="card-date" datetime="2025-02-06">31 Jan 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/laptop-typing-low-code-experience-platform.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Articles</span>
+                                <a href="#" class="tag">Commerce & Care</a>
+                            </div>
+                            <a href="#" class="card-title">AI-Driven Network Automation Transforms Telecom
+                                Operations</a>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 10 -->
+                    <article class="insight-card">
+                        <div class="card-image">
+                            <img src="./images/stock-trader-chart-graph.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span class="tag-label">Blog</span>
+                                <a href="#" class="tag">Data Intelligence Services</a>
+                                <a href="#" class="tag">AI</a>
+                            </div>
+                            <a href="#" class="card-title">Exploring the possibilities Network Automation </a>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="podcasts" aria-label="Podcasts">
+            <div class="podcasts-header">
+                <h2 id="podcasts-heading">Podcasts</h2>
+                <a href="#" aria-label="View all podcasts">See all podcasts ></a>
+            </div>
+
+            <div class="podcasts-nav" aria-label="Podcasts navigation">
+                <button class="nav-button prev" aria-label="Previous podcasts">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="nav-button next" aria-label="Next podcasts">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="podcasts-container">
+                <div class="podcasts-slider">
+                    <!-- Card 1 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/open-ran-video.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">The Timeless Power of Storytelling</a>
+                            <p class="episode-number">S9 E8</p>
+                            <time class="card-date" datetime="2025-02-06">06 Feb 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/poppy-headshot.jfif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">Exploring the possibilities of a more beautiful world</a>
+                            <p class="episode-number">S9 E7</p>
+                            <time class="card-date" datetime="2025-01-29">29 Jan 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/blonde-girl-happy-city.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">Resilience, redemption, and narrative design</a>
+                            <p class="episode-number">S9 E6</p>
+                            <time class="card-date" datetime="2025-01-23">23 Jan 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/man-using-his-computer.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">Storytelling as the currency of culture</a>
+                            <p class="episode-number">S9 E5</p>
+                            <time class="card-date" datetime="2025-01-16">16 Jan 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/three-business-people-looking-at-document.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">GenAI as a thought partner</a>
+                            <p class="episode-number">S9 E4</p>
+                            <time class="card-date" datetime="2025-01-09">09 Jan 2025</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/girl-city-lights-glasses-ai.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">Why no amount of technology will turn a bad story into a good
+                                story</a>
+                            <p class="episode-number">S9 E3</p>
+                            <time class="card-date" datetime="2024-12-19">19 Dec 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/young-girl-face-ai.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">How storytelling got us to the moon</a>
+                            <p class="episode-number">S9 E2</p>
+                            <time class="card-date" datetime="2024-12-12">12 Dec 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/cloud-driving-car_1.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">GenAI in Hollywood: Threat or Opportunity</a>
+                            <p class="episode-number">S9 E1</p>
+                            <time class="card-date" datetime="2024-12-05">05 Dec 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/laptop-typing-low-code-experience-platform.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">Financial Services</a>
+                            </div>
+                            <a href="#" class="card-title">Money 20/20 Podcast: The MoneyPot Discusses Breaking Barriers
+                                in Banking with Amdocs</a>
+                            <p class="episode-number">S2 E14</p>
+                            <time class="card-date" datetime="2024-09-23">23 Sep 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 10 -->
+                    <article class="podcast-card card10">
+                        <div class="card-image">
+                            <img src="./images/stock-trader-chart-graph.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">GenAI</a>
+                                <a href="#" class="tag">Your Career - Is it Choice or Chance?</a>
+                            </div>
+                            <a href="#" class="card-title">Reflecting on GenAI in the Workplace: Season Recap and
+                                Insights</a>
+                            <p class="episode-number">S2 E13</p>
+                            <time class="card-date" datetime="2024-06-13">13 Jun 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 11 -->
+                    <article class="podcast-card card11">
+                        <div class="card-image">
+                            <img src="./images/open-ran-video.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">Your Career - Is it Choice or Chance?</a>
+                            </div>
+                            <a href="#" class="card-title">Skills First: Redefining How We Work</a>
+                            <p class="episode-number">S2 E12</p>
+                            <time class="card-date" datetime="2024-05-22">22 May 2024</time>
+                        </div>
+                    </article>
+
+                    <!-- Card 12 -->
+                    <article class="podcast-card">
+                        <div class="card-image">
+                            <img src="./images/poppy-headshot.jfif" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="article-tags">
+                                <span><i class="fa-solid fa-microphone" style="color: #ffffff;"
+                                        aria-hidden="true"></i></span>
+                                <span class="tag-label">Podcast</span>
+                                <a href="#" class="tag">The Great Indoors</a>
+                            </div>
+                            <a href="#" class="card-title">Smart Homes to a Smart Planet: IoT's intergalactic
+                                upgrade</a>
+                            <p class="episode-number">S8 E10</p>
+                            <time class="card-date" datetime="2024-05-09">09 May 2024</time>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="careers" aria-label="Career opportunities">
+            <div class="careers-content">
+                <h2 id="careers-heading">Grow your career with us</h2>
+                <p>We touch the lives of billions of people every day, enabling a better connected world.</p>
+                <a href="#" class="cta-button" aria-label="Explore career opportunities">Find your next job</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+
+    <footer role="contentinfo" class="site-footer">
+        <div class="footer-content">
+            <!-- Column 1: Topics -->
+            <div class="footer-column" role="navigation" aria-label="Topics">
+                <h3 id="topics-heading">Topics</h3>
+                <ul aria-labelledby="topics-heading">
+                    <li><a href="#">5G</a></li>
+                    <li><a href="#">Automation</a></li>
+                    <li><a href="#">B2B Portfolio</a></li>
+                    <li><a href="#">Cloud</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Financial Services</a></li>
+                    <li><a href="#">Generative AI</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Insights -->
+            <div class="footer-column" role="navigation" aria-label="Insights">
+                <h3 id="insights-footer-heading">Insights</h3>
+                <ul aria-labelledby="insights-footer-heading">
+                    <li><a href="#">Analyst reports</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Case studies</a></li>
+                    <li><a href="#">eBooks</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Whitepapers</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Products & Services -->
+            <div class="footer-column products-services" role="navigation" aria-label="Products and Services">
+                <h3 id="products-heading">Products & Services</h3>
+                <ul class="two-column-list" aria-labelledby="products-heading">
+                    <li><a href="#">Amdocs amAIz Platform</a></li>
+                    <li><a href="#">Amdocs AI & Data Platform</a></li>
+                    <li><a href="#">Amdocs Cloud Management Platform</a></li>
+                    <li><a href="#">Amdocs Customer Engagement Platform</a></li>
+                    <li><a href="#">Amdocs Microservices Management Platform</a></li>
+                    <li><a href="#">Amdocs ConnectX</a></li>
+                    <li><a href="#">Amdocs Customer Experience Suite</a></li>
+                    <li><a href="#">Amdocs MarketONE</a></li>
+                    <li><a href="#">Catalog Management</a></li>
+                    <li><a href="#">Commerce & Care</a></li>
+                    <li><a href="#">IoT</a></li>
+                    <li><a href="#">Monetization</a></li>
+                    <li><a href="#">Service & Network Automation</a></li>
+                    <li><a href="#">Network Deployment & Optimization</a></li>
+                    <li><a href="#">Amdocs Networks</a></li>
+                    <li><a href="#">OTT & Digital Subscription</a></li>
+                    <li><a href="#">Amdocs Low-Code Experience Platform</a></li>
+                    <li><a href="#">Amdocs Consulting Services</a></li>
+                    <li><a href="#">Amdocs Content Management Services</a></li>
+                    <li><a href="#">Amdocs Delivery Services</a></li>
+                    <li><a href="#">Amdocs Mobile Network Services</a></li>
+                    <li><a href="#">Amdocs Operations Services</a></li>
+                    <li><a href="#">Amdocs Quality Engineering Services</a></li>
+                    <li><a href="#">Amdocs Systems Integration Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: About Amdocs -->
+            <div class="footer-column" role="navigation" aria-label="About Amdocs">
+                <h3 id="about-heading">About Amdocs</h3>
+                <ul class="footer-menu" aria-labelledby="about-heading">
+                    <li><a href="/about" aria-label="About Amdocs">About Amdocs</a></li>
+                    <li><a href="/careers/home" aria-label="Careers">Careers</a></li>
+                    <li><a href="/about/corporate-social-responsibility"
+                            aria-label="Corporate Social Responsibility">Corporate Social Responsibility</a></li>
+                    <li><a href="https://investors.amdocs.com/" aria-label="Investors">Investors</a></li>
+                    <li><a href="/contact/vendors" aria-label="Vendors">Vendors</a></li>
+                    <li><a href="/news-press" aria-label="News & Press">News & Press</a></li>
+                    <li><a href="https://www.amdocs-support.com/aps?id=aps_homepage" aria-label="Support">Support</a>
+                    </li>
+                    <li><a href="/why-amdocs" aria-label="Why Amdocs">Why Amdocs</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Social Media -->
+            <div class="footer-column" role="navigation" aria-label="Social media">
+                <h3 id="social-heading">Follow Us</h3>
+                <ul class="social-links" aria-labelledby="social-heading">
+                    <li><a href="https://www.linkedin.com/company/amdocs/" target="_blank" rel="noopener"
+                            aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/Amdocs?lang=en" target="_blank" rel="noopener"
+                            aria-label="Follow us on twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/Amdocs/" target="_blank" rel="noopener"
+                            aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/amdocs/" target="_blank" rel="noopener"
+                            aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/user/amdocsinc" target="_blank" rel="noopener"
+                            aria-label="Follow us on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-divider" role="separator"></div>
+
+        <!-- Bottom footer -->
+        <div class="footer-bottom">
+            <nav aria-label="Legal">
+                <ul class="footer-menu">
+                    <li><a href="/copyright" aria-label="Copyright">Copyright</a></li>
+                    <li><a href="/terms-conditions/privacy" aria-label="Privacy Policy">Privacy</a></li>
+                    <li><a href="/terms-conditions" aria-label="Terms">Terms</a></li>
+                    <li><a href="/accessibility" aria-label="Accessibility">Accessibility</a></li>
+                    <li><a href="/sitemap" aria-label="Sitemap">Sitemap</a></li>
+                </ul>
+            </nav>
+            <button class="cookie-settings" aria-label="Open cookie settings">Cookie Settings</button>
+            <p class="footer-copyright" role="contentinfo">© 2025 Amdocs</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
