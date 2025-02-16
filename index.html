@@ -41,15 +41,25 @@
         <a href="#" class="logo-link">
             <img src="./images/amdocs-logo-2x_0.png" alt="Amdocs Logo" class="logo">
         </a>
-        <div class="main-nav-links" role="navigation">
-            <ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false"
+            aria-controls="main-nav-links">
+            <span class="hamburger-icon" aria-hidden="true">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </span>
+        </button>
+        <div id="main-nav-links" class="main-nav-links" role="navigation" aria-label="Main navigation">
+            <!-- Primary Navigation -->
+            <ul class="primary-nav">
                 <li><a href="#">Why Amdocs</a></li>
                 <li><a href="#">Topics</a></li>
                 <li><a href="#">Products & Services</a></li>
                 <li><a href="#">Insights</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-            <!-- Replace the existing search div with this new form -->
+
+            <!-- Search Form -->
             <form id="search-form" autocomplete="off" class="search-form">
                 <div class="form-item">
                     <label for="edit-search" class="visuallyhidden">Search</label>
@@ -66,6 +76,18 @@
                     </button>
                 </div>
             </form>
+
+            <!-- Border Separator -->
+            <div class="nav-separator" aria-hidden="true"></div>
+
+            <!-- Secondary Navigation -->
+            <ul class="secondary-nav">
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">News & Press</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
         </div>
     </nav>
     <main>
@@ -828,6 +850,60 @@
             <p class="footer-copyright" role="contentinfo">© 2025 Amdocs</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav-links');
+            const body = document.body;
+
+            // Create overlay element
+            const overlay = document.createElement('div');
+            overlay.className = 'menu-overlay';
+            body.appendChild(overlay);
+
+            function toggleMenu() {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('is-active');
+                overlay.classList.toggle('is-active');
+                body.style.overflow = !isExpanded ? 'hidden' : '';
+            }
+
+            menuToggle.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', toggleMenu);
+
+            // Close menu with Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                    toggleMenu();
+                }
+            });
+
+            // Handle focus trap within mobile menu
+            mainNav.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    const focusableElements = mainNav.querySelectorAll(
+                        'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                    );
+                    const firstFocusable = focusableElements[0];
+                    const lastFocusable = focusableElements[focusableElements.length - 1];
+
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstFocusable) {
+                            lastFocusable.focus();
+                            e.preventDefault();
+                        }
+                    } else {
+                        if (document.activeElement === lastFocusable) {
+                            firstFocusable.focus();
+                            e.preventDefault();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 

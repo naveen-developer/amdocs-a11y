@@ -907,7 +907,7 @@
      }
 
      .customer-content {
-         padding-right: 0;
+         padding: 0;
      }
  }
 
@@ -1456,6 +1456,10 @@
          grid-template-columns: 1fr;
          /* Stack on mobile */
      }
+
+     .hero-content {
+         padding: 10% 5% 20% 5%;
+     }
  }
 
  .search-form {
@@ -1486,19 +1490,30 @@
  }
 
  /* Responsive adjustments */
+ @media (max-width: 1300px) {
+     .main-nav-links ul {
+         gap: 1rem;
+     }
+ }
+
  @media (max-width: 1200px) {
      .search-form {
          width: 200px;
      }
+
+     .main-nav-links ul {
+         gap: 0rem;
+     }
  }
 
  @media (max-width: 1024px) {
-     .main-nav-links {
-         gap: 1rem;
+
+     .main-nav-links a {
+         padding: 0 10px;
      }
 
-     .main-nav-links ul {
-         gap: 1rem;
+     .search-form {
+         margin-left: 0rem;
      }
  }
 
@@ -1576,4 +1591,249 @@
      outline: 2px solid #ffffff;
      outline-offset: -2px;
      border-radius: 0 4px 4px 0;
+ }
+
+ /* Mobile Navigation Styles */
+ .mobile-menu-toggle {
+     display: none;
+     background: none;
+     border: none;
+     padding: 0.5rem;
+     cursor: pointer;
+     position: relative;
+     z-index: 1000;
+ }
+
+ .hamburger-icon {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 24px;
+     height: 18px;
+ }
+
+ .bar {
+     display: block;
+     width: 100%;
+     height: 2px;
+     background-color: #ffffff;
+     transition: all 0.3s ease;
+ }
+
+ /* Mobile Navigation Breakpoint */
+ @media (max-width: 950px) {
+     .top-nav {
+         display: none;
+     }
+
+     .insight-card {
+         flex: 0 0 calc((100% - 0rem) / 1.25);
+         min-width: calc((100% - 0rem) / 1.25);
+     }
+
+     .insight-card .card-image {
+         width: 100%;
+         height: 150px;
+         overflow: hidden;
+     }
+
+     .podcast-card {
+         flex: 0 0 calc((100% - 0rem) / 1.25 - 0px);
+         min-width: calc((100% - 0rem) / 1.25 - 0px);
+     }
+
+     .podcast-card .card-image {
+         width: 100%;
+         height: 250px;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .mobile-menu-toggle {
+         display: flex;
+         margin-left: auto;
+     }
+
+     .main-nav-links {
+         position: fixed;
+         top: 0;
+         right: -100%;
+         width: 280px;
+         height: 100vh;
+         background: #1a1a1f;
+         padding-top: 80px;
+         /* Add space for the header/logo */
+         padding-right: 2rem;
+         padding-left: 2rem;
+         padding-bottom: 2rem;
+         flex-direction: column;
+         align-items: flex-start;
+         transition: right 0.3s ease;
+         z-index: 999;
+         overflow-y: auto;
+     }
+
+     .primary-nav {
+         margin-top: 0;
+         /* Reset margin */
+         width: 100%;
+     }
+
+     /* Adjust mobile menu toggle position */
+     .mobile-menu-toggle {
+         position: relative;
+         z-index: 1000;
+         margin-left: auto;
+     }
+
+     .main-nav-links.is-active {
+         right: 0;
+     }
+
+     .main-nav-links ul {
+         flex-direction: column;
+         width: 100%;
+         gap: 1rem;
+     }
+
+     .main-nav-links li {
+         width: 100%;
+     }
+
+     .main-nav-links a {
+         display: block;
+         padding: 0.75rem 0;
+         width: 100%;
+     }
+
+     /* Search form adjustments */
+     .search-form {
+         width: 100%;
+         margin: 1rem 0;
+     }
+
+     /* Hamburger animation */
+     .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(1) {
+         transform: translateY(8px) rotate(45deg);
+     }
+
+     .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(2) {
+         opacity: 0;
+     }
+
+     .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(3) {
+         transform: translateY(-8px) rotate(-45deg);
+     }
+
+     /* Overlay when menu is open */
+     .menu-overlay {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.5);
+         z-index: 998;
+     }
+
+     .menu-overlay.is-active {
+         display: block;
+     }
+ }
+
+ /* Show top navigation on desktop */
+ @media (min-width: 951px) {
+     .top-nav {
+         display: block;
+     }
+
+     .main-nav-links .secondary-nav {
+         display: none;
+         /* Hide secondary nav in mobile menu on desktop */
+     }
+ }
+
+ /* Focus styles for better accessibility */
+ .mobile-menu-toggle:focus {
+     outline: 2px solid #ffffff;
+     outline-offset: 2px;
+ }
+
+ /* High contrast mode support */
+ @media (forced-colors: active) {
+     .bar {
+         background-color: ButtonText;
+     }
+ }
+
+ /* Add these styles to your existing mobile navigation CSS */
+
+ @media (max-width: 950px) {
+     .main-nav-links {
+         /* ... existing mobile menu styles ... */
+         display: flex;
+         flex-direction: column;
+     }
+
+     .primary-nav,
+     .secondary-nav {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         list-style: none;
+     }
+
+     .nav-separator {
+         width: 100%;
+         height: 1px;
+         background: rgba(255, 255, 255, 0.1);
+         margin: 1rem 0;
+     }
+
+     .secondary-nav {
+         margin-top: 0.5rem;
+     }
+
+     .primary-nav a,
+     .secondary-nav a {
+         color: #ffffff;
+         text-decoration: none;
+         display: block;
+         padding: 0.75rem 0;
+         transition: color 0.3s ease;
+     }
+
+     .primary-nav a:hover,
+     .secondary-nav a:hover {
+         color: rgba(255, 255, 255, 0.7);
+     }
+
+     /* Focus styles */
+     .primary-nav a:focus,
+     .secondary-nav a:focus {
+         outline: 2px solid #ffffff;
+         outline-offset: -2px;
+     }
+
+     /* Active state */
+     .primary-nav a[aria-current="page"],
+     .secondary-nav a[aria-current="page"] {
+         color: #ef9497;
+         font-weight: 500;
+     }
+ }
+
+ /* Hide secondary nav in desktop view */
+ @media (min-width: 951px) {
+
+     .secondary-nav,
+     .nav-separator {
+         display: none;
+     }
+ }
+
+ .secondary-nav a[aria-current="page"] {
+     color: #ef9497;
+     font-weight: 500;
  }
