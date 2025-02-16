@@ -7,9 +7,9 @@ podCards.forEach(card => {
     let tagLabel = card.querySelector('.tag-label').textContent;
     let linkTag = card.querySelector('.tag')
     let episodeNumber = card.querySelector('.episode-number').textContent;
-    console.log(tagLabel);
-    console.log(linkTag);
-    console.log(episodeNumber);
+    // console.log(tagLabel);
+    // console.log(linkTag);
+    // console.log(episodeNumber);
     linkTag.setAttribute('aria-label', tagLabel + ' ' + episodeNumber + ' ' + linkTag.textContent);
 });
 

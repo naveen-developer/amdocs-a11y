@@ -23,11 +23,14 @@
 
 
 <body>
+    <!-- Add this as the first element inside the body tag -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Top Navigation Bar -->
     <nav aria-label="Secondary Navigation" class="top-nav">
         <div class="top-nav-links">
             <ul>
-                <li><a href="#" aria-current="page">Our Partners</a></li>
+                <li><a href="#">Our Partners</a></li>
                 <li><a href="#">News & Press</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Support</a></li>
@@ -90,7 +93,7 @@
             </ul>
         </div>
     </nav>
-    <main>
+    <main id="main-content" role="main">
         <section class="hero" aria-label="Hero banner">
             <div class="video-container">
                 <video autoplay muted loop playsinline aria-hidden="true">
@@ -856,6 +859,8 @@
             const menuToggle = document.querySelector('.mobile-menu-toggle');
             const mainNav = document.querySelector('.main-nav-links');
             const body = document.body;
+            const skipLink = document.querySelector('.skip-link');
+            const topNav = document.querySelector('.top-nav');
 
             // Create overlay element
             const overlay = document.createElement('div');
@@ -873,33 +878,39 @@
             menuToggle.addEventListener('click', toggleMenu);
             overlay.addEventListener('click', toggleMenu);
 
-            // Close menu with Escape key
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-                    toggleMenu();
-                }
-            });
-
-            // Handle focus trap within mobile menu
+            // Enhanced focus trap management
             mainNav.addEventListener('keydown', function (e) {
                 if (e.key === 'Tab') {
-                    const focusableElements = mainNav.querySelectorAll(
-                        'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-                    );
+                    const focusableElements = [
+                        skipLink,
+                        ...topNav.querySelectorAll('a[href]'),
+                        menuToggle,
+                        ...mainNav.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])')
+                    ];
+
                     const firstFocusable = focusableElements[0];
                     const lastFocusable = focusableElements[focusableElements.length - 1];
 
+                    // Handle shift + tab
                     if (e.shiftKey) {
                         if (document.activeElement === firstFocusable) {
                             lastFocusable.focus();
                             e.preventDefault();
                         }
-                    } else {
+                    }
+                    // Handle tab
+                    else {
                         if (document.activeElement === lastFocusable) {
                             firstFocusable.focus();
                             e.preventDefault();
                         }
                     }
+                }
+
+                // Close menu with Escape key
+                if (e.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                    toggleMenu();
+                    menuToggle.focus();
                 }
             });
         });

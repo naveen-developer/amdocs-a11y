@@ -12,32 +12,26 @@
 
  /* Top navigation */
  .top-nav {
-     background-color: #131318;
-     padding: 8px 20px;
-     overflow: hidden;
-     border-bottom: 1px solid #2a2a2a;
-     /* Added border bottom */
+     text-align: end;
+     display: flex;
+     justify-content: flex-end;
+     padding: 0.5rem 8%;
+     background: #000000;
  }
 
-
- .top-nav-links {
-     float: right;
+ .top-nav ul {
+     display: flex;
+     gap: 2rem;
+     margin: 0;
+     padding: 0;
+     list-style: none;
  }
 
- .top-nav-links a {
+ .top-nav a {
      color: #ffffff;
      text-decoration: none;
-     padding: 0 15px;
-     font-size: 12px;
+     font-size: 0.9rem;
  }
-
- .top-nav-links a:hover {
-     text-decoration: underline;
-     font-weight: bold;
-     color: #ffffff;
- }
-
-
 
  /* Main navigation */
  .main-nav {
@@ -1836,4 +1830,23 @@
  .secondary-nav a[aria-current="page"] {
      color: #ef9497;
      font-weight: 500;
+ }
+
+ /* Add these styles for the skip link */
+ .skip-link {
+     position: absolute;
+     top: -40px;
+     left: 0;
+     background: #ffffff;
+     color: #000000;
+     padding: 8px 16px;
+     z-index: 1001;
+     text-decoration: none;
+     transition: top 0.3s ease;
+ }
+
+ .skip-link:focus {
+     top: 0;
+     outline: 2px solid #ef9497;
+     outline-offset: -2px;
  }
